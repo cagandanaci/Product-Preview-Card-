@@ -98,10 +98,6 @@ button img {
     display: inline;
     margin-right: 10px;
 }
-button p {
-    display: inline;
-    margin: auto 0px auto 0px;
-}
 button:hover {
     background-color: hsl(158, 36%, 25%);
 }
@@ -149,3 +145,4 @@ button:hover {
     }
 
 }
+
