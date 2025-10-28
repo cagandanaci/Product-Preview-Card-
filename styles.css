@@ -132,6 +132,7 @@ button:hover {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
         width: 90vw;
+        height: 70vh;
     }
     .image {
         height: 35vh;
@@ -146,4 +147,5 @@ button:hover {
         border-bottom-left-radius: 10px;
         padding: 7%;
     }
+
 }
