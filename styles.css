@@ -1,0 +1,149 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+}
+.aligning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    display: grid;
+    width: 30vw;
+    grid-template-columns: 1fr 1fr;
+}
+.image {
+    background-image: url(./images/image-product-desktop.jpg);
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+.product {
+    background-color: white;
+    padding: 10%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.price {
+    margin-top: 20px;
+    height: 15%;
+}
+
+.price > h1 {
+    display: inline;
+    font-size: 2rem;
+    font-family: 'Fraunces';
+    color: hsl(158, 36%, 37%);
+    letter-spacing: 0.05rem;
+    width: auto;
+    font-weight: 700;
+}   
+
+.former-price {
+    display: inline-block;
+    width: auto;
+    font-size: 0.8rem;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    margin-left: 20px;
+    font-weight: 500;
+    position: relative;
+    bottom: 7px;
+}
+
+.product-name > h2 {
+    font-size: 2rem;
+    font-family: 'Fraunces';
+    font-weight: 700;
+    color: hsl(212, 21%, 14%);
+    margin-top: 0px;
+}
+.product-type > h3 {
+    color: hsl(228, 12%, 48%);
+    font-size: 0.7rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+.description > p {
+    font-size: 0.8rem;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+button img {
+    display: inline;
+    margin-right: 10px;
+}
+button p {
+    display: inline;
+    margin: auto 0px auto 0px;
+}
+button:hover {
+    background-color: hsl(158, 36%, 25%);
+}
+
+@media (max-width: 1440px) {
+    .container {
+        width: 50vw;
+    }
+}
+@media (max-width: 880px) {
+    .container {
+        width: 60vw;
+    }
+}
+@media (max-width: 740px) {
+    .container {
+        width: 70vw;
+    }
+}
+@media (max-width: 640px) {
+    .container {
+        width: 80vw;
+    }
+}
+/*Mobile*/
+@media (max-width: 580px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        width: 90vw;
+    }
+    .image {
+        height: 35vh;
+        background-image: url(./images/image-product-mobile.jpg);
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .product {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+        padding: 7%;
+    }
+}
